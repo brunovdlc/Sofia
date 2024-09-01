@@ -1,0 +1,580 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;0,500;1,100;1,400&display=swap");
+
+body {
+  background: linear-gradient(to left, #ccc, #deedfc);
+  font-family: "Roboto", sans-serif;
+}
+
+.container {
+  background: #deedfc;
+  color: #001;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.5);
+  border-radius: 20px;
+  margin: 10rem auto;
+  padding: 4rem;
+  max-width: 40rem;
+}
+
+.cabecalho {
+  display: flex;
+  justify-content: space-between;
+}
+
+.perfil {
+  display: flex;
+}
+
+.perfil-foto {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  object-fit: cover; /* Garante que a imagem preencha o container de forma proporcional */
+  box-shadow: 0px 0px 21px 2px rgba(0, 0, 0, 0.2);
+}
+
+
+.titulo {
+  margin-left: 16px;
+}
+ 
+
+.titulo h1 {
+  position: absolute;
+  top: 60px; /* Ajuste o valor conforme necessário para mover o texto para baixo */
+  width: 200px; /* Largura fixa do contêiner */
+  white-space: nowrap; /* Impede que o texto seja quebrado em várias linhas */
+}
+}
+
+
+.titulo h1 {
+  font-weight: 500;
+  font-size: 27px;
+  text-shadow: 1px 1px 2px #6c757d;
+  line-height: 8px;
+  line-height: 1; /* Ajuste conforme necessário */
+  display: inline-block; /* Torna o elemento um bloco em linha */
+}
+
+.titulo h3 {
+  font-weight: 400;
+  font-size: 18px;
+  font-style: normal; 
+}
+
+.titulo h4 {
+  font-weight: 100;
+  font-size: 12px;
+  font-style: italic;
+  text-shadow: 1px 1px 2px #6c757d;
+   
+
+}
+
+.titulo2 {
+  text-align: center; /* Centraliza horizontalmente */
+  margin-left: 20px; /* Move o elemento para a esquerda */
+  margin-top: -370px; /* Move o elemento para cima */
+  z-index: 1; /* Garante que o elemento fique acima de outros elementos */
+  position: relative; /* Define uma posição */
+  color: #000; /* Define a cor do texto como preta */
+}
+
+
+.tema button {
+  align-self: flex-end;
+  font-size: 15px;
+  font-weight: 500;
+  padding: 8px 16px;
+  background: #dee2e6;
+  border: 2px solid #495057;
+  box-sizing: border-box;
+  border-radius: 100px;
+}
+
+.tema button:hover {
+  background-color: #adb5bd;
+  transition: 0.5s;
+  transform: scale(1.1);
+}
+
+ul {
+  padding: 0;
+}
+/* cores do container  */
+.projetos {
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(to right, #fff, #fff);
+  color: #1c1c1c;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
+  margin-top: 1rem;
+  padding: 1rem;
+  margin-top: 40px; /* Ajuste o valor conforme necessário */
+}
+}
+
+.projetos a {
+  text-decoration: none;
+  color: #1c1c1c;
+  font-size: 14px;
+}
+
+.projetos a:hover {
+  color: #b5838d;
+}
+
+/* cor da 1 palavra da descrição */
+.projetos-titulo { 
+  font-weight: 400;
+  font-size: 17px;
+  font-style: normal;
+  color: #000;
+  text-shadow: 1px 1px 2px #495057;
+}
+/* cor da 2 palavra da descrição link */
+.projetos li {
+  color: #ff0000;
+  margin-top: 2px;
+  font-size: 0.9rem;
+  text-shadow: 1px 1px 2px #6c757d;
+}
+
+/* cor do tema externo */
+.dark {
+  background: linear-gradient(to right, #212529, #001);
+}
+
+/* cor do tema interno */
+.dark .container {
+  background: #333439;
+  color: #f7f7f7;
+  text-shadow: 1px 1px 2px black;
+}
+
+.dark .titulo h4 {
+  color: #f7f7f7;
+  text-shadow: 1px 1px 2px black;
+}
+
+.dark .projetos {
+  background: linear-gradient(to right, #495057, #6c757d);
+  color: #f7f7f7;
+  text-shadow: 1px 1px 2px black;
+}
+
+.dark .projetos-titulo {
+  color: #f7f7f7;
+  text-shadow: 1px 1px 2px #495057;
+}
+
+.dark .projetos li {
+  color: #f7f7f7;
+  text-shadow: 1px 1px 2px black;
+}
+
+.dark .projetos a {
+  color: #f7f7f7;
+  text-shadow: 1px 1px 2px black;
+}
+
+.dark .projetos a:hover {
+  color: black;
+}
+
+.dark .tema button {
+  background: #1c1c1c;
+  color: white;
+  border: 2px solid #6c757d;
+}
+
+.dark .tema button:hover {
+  background: #343a40;
+}
+
+/* seguir */
+
+.seguir-btn {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.seguir-btn:hover {
+  background-color: #0056b3;
+}
+
+
+
+/* icone coração */
+  .container {
+    position: relative;
+}
+
+.perfil {
+    position: relative;
+}
+
+.heart-btn {
+    position: absolute;
+    bottom: -10px;
+    left: 35%;
+    transform: translateX(-50%);
+    font-size: 34px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.heart-btn {
+  animation: pulse 1s infinite alternate; /* Aplica a animação de pulsação */
+}
+
+
+.marriage-status {
+    text-align: center;
+    color: white;
+    margin-top: 5px;
+}
+
+.card-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+    justify-content: center;
+    align-items: center; 
+   z-index: 1000; /* Defina um valor alto para garantir que fique à frente dos stories */
+}
+
+.story-full {
+    z-index: 999; /* Defina um valor menor do que o do card para garantir que fique atrás */
+}
+.card {
+  overflow: hidden;
+  position: relative;
+  width: 325px;
+  height: 560px;
+  background: #001; /* mudar cor do card */
+  backdrop-filter: blur(5px);
+  border-radius: 20px;
+  box-shadow: 0 4px 28px rgba(0, 0, 0, 0.1);
+}
+
+.card-content {
+  padding: 20px;
+  text-align: center;
+}
+
+.profile-circle {
+  margin-top: 20px;
+  width: 200px;
+  height: 200px;
+  border: 5px solid #000;
+  border-radius: 50%;
+  margin: 0 auto 20px;
+  overflow: hidden;
+  position: relative;
+  top: 20px; /* Ajuste o valor conforme necessário */
+}
+
+.profile-picture {
+  width: 100%;
+  height: auto;
+  border-radius: 50%;
+}
+
+h2, p {
+  text-align: center;
+  font-size: 34px; /* para h2 */
+  margin-bottom: 30px; /* para h2 */
+  font-size: 16px; /* para p */
+  color: #fff;
+}
+
+
+.progress-bar {
+  width: 100%;
+  height: 5px;
+  background-color: #ccc;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  display: block;
+}
+
+.close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  padding: 5px;
+  font-size: 20px;
+  background: transparent;
+  border: none;
+  color: #666;
+  cursor: pointer;
+}
+
+.card .close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    color: #fff;
+    font-size: 20px;
+}
+
+.marriage-status {
+    color: #fff;
+    font-weight: bold;
+    text-align: center;
+}
+
+.card-overlay.active {
+    display: flex;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    font-size: 20px;
+    color: #333;
+}
+
+.card {
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.card-overlay.active .card {
+    opacity: 1;
+}
+
+.card-overlay {
+    position: fixed;
+    top: -100%; /* Inicialmente fora da tela */
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+     background-color: rgba(0, 0, 0, 0.5); /* Cor de fundo semi-transparente */
+  backdrop-filter: blur(10px); /* Desfoque aplicado ao fundo */
+    transition: top 0.5s ease-in-out; /* Use uma transição suave para animar a mudança de posição */
+}
+
+
+.card-overlay.active {
+    top: 0; /* Move o card-overlay para o topo da tela */
+}
+
+
+/* icones social */
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px; /* Adiciona espaço acima dos ícones */
+  margin-left: 20px; /* Adiciona espaço à esquerda dos ícones */
+}
+
+.dark .social-icons svg {
+  fill: #fff; /* Define a cor dos ícones para branco */
+}
+
+
+.icon {
+  font-size: 24px;
+  margin: 0 10px;
+  color: #333;
+  text-decoration: none;
+}
+
+.twitter:hover, .facebook:hover, .instagram:hover, .discord:hover, .rocket:hover {
+  color: #55acee; /* Twitter color */
+}
+
+.facebook:hover {
+  color: #3b5998; /* Facebook color */
+}
+
+.instagram:hover {
+  color: #e4405f; /* Instagram color */
+}
+
+.discord:hover {
+  color: #7289da; /* Discord color */
+}
+
+.rocket:hover {
+  color: #ff4500; /* Rocket color */
+}
+
+/* efeitos nas fts */ 
+
+
+.hovicon.effect-8 {
+    background: rgba(255, 255, 255, 0.1);
+    -webkit-transition: -webkit-transform ease-out 0.1s, background 0.2s;
+    -moz-transition: -moz-transform ease-out 0.1s, background 0.2s;
+    transition: transform ease-out 0.1s, background 0.2s;
+}
+.hovicon.effect-8:after {
+    top: 0;
+    left: 0;
+    padding: 0;
+    z-index: -1;
+    box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.1);
+    opacity: 0;
+    -webkit-transform: scale(0.9);
+    -moz-transform: scale(0.9);
+    -ms-transform: scale(0.9);
+    transform: scale(0.9);
+}
+.hovicon.effect-8:hover {
+    background: rgba(255, 255, 255, 0.05);
+    -webkit-transform: scale(0.93);
+    -moz-transform: scale(0.93);
+    -ms-transform: scale(0.93);
+    transform: scale(0.93);
+    color: #fff;
+}
+.hovicon.effect-8:hover i {
+    color: #fff;
+}
+.hovicon.effect-8:hover:after {
+    -webkit-animation: sonarEffect 1.3s ease-out 75ms;
+    -moz-animation: sonarEffect 1.3s ease-out 75ms;
+    animation: sonarEffect 1.3s ease-out 75ms;
+}
+@-webkit-keyframes sonarEffect {
+    0% {
+        opacity: 0.3;
+    }
+    40% {
+        opacity: 0.5;
+        box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.1), 0 0 10px 10px #3851bc, 0 0 0 10px rgba(255, 255, 255, 0.5);
+    }
+    100% {
+        box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.1), 0 0 10px 10px #3851bc, 0 0 0 10px rgba(255, 255, 255, 0.5);
+        -webkit-transform: scale(1.5);
+        opacity: 0;
+    }
+}
+@-moz-keyframes sonarEffect {
+    0% {
+        opacity: 0.3;
+    }
+    40% {
+        opacity: 0.5;
+        box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.1), 0 0 10px 10px #3851bc, 0 0 0 10px rgba(255, 255, 255, 0.5);
+    }
+    100% {
+        box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.1), 0 0 10px 10px #3851bc, 0 0 0 10px rgba(255, 255, 255, 0.5);
+        -moz-transform: scale(1.5);
+        opacity: 0;
+    }
+}
+@keyframes sonarEffect {
+    0% {
+        opacity: 0.3;
+    }
+    40% {
+        opacity: 0.5;
+        box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.1), 0 0 10px 10px #3851bc, 0 0 0 10px rgba(255, 255, 255, 0.5);
+    }
+    100% {
+        box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.1), 0 0 10px 10px #3851bc, 0 0 0 10px rgba(255, 255, 255, 0.5);
+        transform: scale(1.5);
+        opacity: 0;
+    }
+}
+
+/* */ 
+
+.localizacao {
+    margin-top: 120px; /* Adiciona uma margem de 20 pixels acima do elemento */
+}
+
+
+/* efeito bolinhas */
+
+ .glitch {
+  font-size: 3rem; /* Altera o tamanho da fonte */
+  font-weight: 700;
+  text-transform: uppercase;
+  position: relative;
+  text-align: center; /* Centraliza o texto horizontalmente */
+  color: white; /* Define a cor do texto como branco */
+
+  text-shadow: 0.05em 0 0 rgba(255, 0, 0, 0.75),
+    -0.025em -0.05em 0 rgba(0, 255, 0, 0.75),
+    0.025em 0.05em 0 rgba(0, 0, 255, 0.75);
+
+  animation: glitch 500ms infinite;
+}
+
+@keyframes glitch {
+  0% {
+    text-shadow: 0.05em 0 0 rgba(255, 0, 0, 0.75),
+      -0.05em -0.025em 0 rgba(0, 255, 0, 0.75),
+      -0.025em 0.05em 0 rgba(0, 0, 255, 0.75);
+  }
+  14% {
+    text-shadow: 0.05em 0 0 rgba(255, 0, 0, 0.75),
+      -0.05em -0.025em 0 rgba(0, 255, 0, 0.75),
+      -0.025em 0.05em 0 rgba(0, 0, 255, 0.75);
+  }
+  15% {
+    text-shadow: -0.05em -0.025em 0 rgba(255, 0, 0, 0.75),
+      0.025em 0.025em 0 rgba(0, 255, 0, 0.75),
+      -0.05em -0.05em 0 rgba(0, 0, 255, 0.75);
+  }
+  49% {
+    text-shadow: -0.05em -0.025em 0 rgba(255, 0, 0, 0.75),
+      0.025em 0.025em 0 rgba(0, 255, 0, 0.75),
+      -0.05em -0.05em 0 rgba(0, 0, 255, 0.75);
+  }
+  50% {
+    text-shadow: 0.025em 0.05em 0 rgba(255, 0, 0, 0.75),
+      0.05em 0 0 rgba(0, 255, 0, 0.75), 0 -0.05em 0 rgba(0, 0, 255, 0.75);
+  }
+  99% {
+    text-shadow: 0.025em 0.05em 0 rgba(255, 0, 0, 0.75),
+      0.05em 0 0 rgba(0, 255, 0, 0.75), 0 -0.05em 0 rgba(0, 0, 255, 0.75);
+  }
+  100% {
+    text-shadow: -0.025em 0 0 rgba(255, 0, 0, 0.75),
+      -0.025em -0.025em 0 rgba(0, 255, 0, 0.75),
+      -0.025em -0.05em 0 rgba(0, 0, 255, 0.75);
+  }
+}
